@@ -1,0 +1,27 @@
+-create a store database
+
+create table clothing (item text, color text, size text, price numeric, brand text);
+insert into clothing values ("shirt", "blue", "L", "12", "zara");
+insert into clothing values ("pants", "Denim", "M", "26", "target");
+insert into clothing values ("shirt", "green", "M", "6", "walmart");
+insert into clothing values ("shirt", "yellow", "L", "15", "target");
+insert into clothing values ("skirt", "black", "L", "20", "H&M");
+insert into clothing values ("skirt", "purple", "L", "18", "zara");
+insert into clothing values ("pants", "grey", "M", "30", "H&M");
+insert into clothing values ("shirt", "red", "S", "10", "walmart");
+insert into clothing values ("pants", "black", "L", "25", "target");
+insert into clothing values ("jacket", "denim", "L", "20", "H&M");
+insert into clothing values ("shirt", "orange", "S", "13", "target");
+insert into clothing values ("pants", "denim", "S", "36", "H&M");
+insert into clothing values ("shirt", "red", "L", "10", "walmart");
+insert into clothing values ("pants", "black", "L", "56", "zara");
+insert into clothing values ("jacket", "denim", "L", "38", "COTTONON");
+
+-display order by price
+select * from clothing order by price
+
+- what items are less than $20?
+SELECT * FROM clothing where price < 20;
+
+-whats the most expensive item in the store?
+select MAX(price) from clothing;
